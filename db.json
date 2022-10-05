@@ -17,6 +17,12 @@
       "articleId": 1,
       "title": "angular 14",
       "description": "how to make modular SAP in angular"
+    },
+    {
+      "id": 2,
+      "articleId": 3,
+      "title": "test",
+      "description": "this is just for the test article purpose (this article updated)"
     }
   ],
   "register": [
