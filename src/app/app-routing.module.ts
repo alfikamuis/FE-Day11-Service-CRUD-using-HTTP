@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ArticleComponent } from './components/article/article.component';
 import { CreateComponent } from './components/article/create/create.component';
 import { EditComponent } from './components/article/edit/edit.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'create-article', component: CreateComponent},
   {path: 'edit-article/:id', component: EditComponent},
   {path: 'register', component: RegisterComponent},
+  {path: 'about-us', component: AboutUsComponent}
 ];
 
 @NgModule({

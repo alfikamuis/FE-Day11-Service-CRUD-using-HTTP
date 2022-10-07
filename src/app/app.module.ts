@@ -21,6 +21,10 @@ import { EditComponent } from './components/article/edit/edit.component';
 import { RegisterComponent } from './components/register/register.component';
 import { RegisterService } from './services/register.service';
 import { PublishService } from './services/publish.service';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+import { CardModule, } from 'primeng/card';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -35,7 +39,8 @@ import { PublishService } from './services/publish.service';
     ArticleComponent,
     CreateComponent,
     EditComponent,
-    RegisterComponent
+    RegisterComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,10 @@ import { PublishService } from './services/publish.service';
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    AccordionModule,
+    CardModule,
+    BrowserAnimationsModule
   ],
   providers: [DataService,ArticleService,RegisterService,PublishService],
   bootstrap: [AppComponent]
